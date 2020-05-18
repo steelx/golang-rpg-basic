@@ -23,7 +23,7 @@ var (
 
 func run() {
 	cfg := pixelgl.WindowConfig{
-		Title:       "GP RPG",
+		Title:       "GO RPG",
 		Bounds:      pixel.R(0, 0, float64(global.gWindowWidth), float64(global.gWindowHeight)),
 		VSync:       global.gVsync,
 		Undecorated: global.gUndecorated,
