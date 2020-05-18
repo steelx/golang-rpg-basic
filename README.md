@@ -8,4 +8,5 @@ Built with love, GoLang & PixelGL
 read more https://dev.to/ajinkyax/state-machine-in-go-for-a-2d-game-198l
 
 
-##
+### DEMO
+![golang-rpg-basic](https://user-images.githubusercontent.com/3184210/82204547-b9997080-9922-11ea-9d7b-4f5bebd439bd.gif)
