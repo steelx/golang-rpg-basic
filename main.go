@@ -23,7 +23,7 @@ var (
 
 func run() {
 	cfg := pixelgl.WindowConfig{
-		Title:       "GO RPG",
+		Title:       "GO RPG Basic demo",
 		Bounds:      pixel.R(0, 0, float64(global.gWindowWidth), float64(global.gWindowHeight)),
 		VSync:       global.gVsync,
 		Undecorated: global.gUndecorated,
@@ -150,9 +150,11 @@ func gameLoop() {
 		case <-tick:
 			dt := time.Since(last).Seconds()
 			last = time.Now()
+
 			CastleRoomMap.DrawAfter(1, func(canvas *pixelgl.Canvas) {
 				gHero.mEntity.TeleportAndDraw(*CastleRoomMap, canvas)
 			})
+
 			gHero.mController.Update(dt)
 		}
 

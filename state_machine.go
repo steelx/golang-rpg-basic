@@ -3,8 +3,8 @@ package main
 /*
 mController :
 	StateMachineCreate({
-		"wait" : function() return WaitStateCreate(Entity, gMap),
-		"move" : function() return MoveStateCreate(gHero, gMap),
+		"wait" : func() return WaitStateCreate(Entity, gMap),
+		"move" : func() return MoveStateCreate(gHero, gMap),
 	})
 */
 
@@ -13,19 +13,19 @@ mController :
 //
 // Usage:
 //
-// gStateMachine = StateMachine:Create
+// gStateMachine = StateMachineCreate(
 // {
-// 		['MainMenu'] = function()
-// 			return MainMenu:Create()
-// 		end,
-// 		['InnerGame'] = function()
-// 			return InnerGame:Create()
-// 		end,
-// 		['GameOver'] = function()
-// 			return GameOver:Create()
-// 		end,
-// }
-// gStateMachine:Change("MainGame")
+// 		"MainMenu" : func() State {
+// 			return MainMenuCreate()
+// 		},
+// 		"InnerGame" : func() State {
+// 			return InnerGameCreate()
+// 		},
+// 		"GameOver" : func() State {
+// 			return GameOverCreate()
+// 		},
+// })
+// gStateMachine.Change("MainGame")
 //
 
 //StateMachine mController
