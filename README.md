@@ -4,7 +4,7 @@ This is not a complete game, but a setup or a bootstrap to continue or build on 
 
 Built with love, GoLang & PixelGL
 
-[![Patreon](https://img.shields.io/badge/$opencollective-ajinkyax-f96854?style=for-the-badge&logo=opencollective&logoColor=green)](https://opencollective.com/ajinkyax)
+[![more RPG Game code here]](https://github.com/steelx/go-rpg-cgm)
 
 ### State machine
 read more https://dev.to/ajinkyax/state-machine-in-go-for-a-2d-game-198l
